@@ -52,7 +52,6 @@ select * from products limit 0,10; -- (1から10までではなく、0から10�
 -- ★まとめ
 select id,last_name from users where gender = 1 limit 1000;
 
-
 -- 合計値を求めるSQL
 select
   sum(amount)
