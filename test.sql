@@ -3,5 +3,7 @@
 -- mysql.server stop ローカルなら停止しておく
 
 -- ユーザー一覧を取得
-use mydb;
-select * from users;
+use mydb; -- 忘れること多い
+select * from users; -- formのタイポ
+
+-- エラーはコードが振られるので、調査に使う
