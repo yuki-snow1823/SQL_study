@@ -11,3 +11,5 @@ select * from users; -- formのタイポ
 /*
 複数行コメント
 */
+select id,last_name from users;
+-- 必要なデータの取得
