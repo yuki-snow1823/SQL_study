@@ -24,3 +24,8 @@ select
  price * 1.08 as 税込価格
 from 
  products;
+
+-- 条件の指定
+-- select from where 条件
+select name from products where price >= 9800;
+
