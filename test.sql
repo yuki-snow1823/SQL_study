@@ -14,5 +14,13 @@ select * from users; -- formのタイポ
 select id,last_name from users LIMIT 0, 1000;
 -- 必要なデータの取得
 
+-- 名前の変更
 select name as 名前 ,price as 価格 from products;
 
+-- 処理をして出力
+select
+ name as 名前,
+ price as 価格,
+ price * 1.08 as 税込価格
+from 
+ products;
