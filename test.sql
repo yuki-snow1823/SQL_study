@@ -29,3 +29,12 @@ from
 -- select from where 条件
 select name from products where price >= 9800;
 
+-- 演算子
+select * from products where id = 1; -- = 1個でいい
+select * from products where name = "あああ"; -- = しっかり囲む
+select * from products where name <> "あああ"; -- = ではない != でもいい
+select * from products where id = in(1,2,3); -- = もしくは、否定ならnot in
+
+-- nullの場合is not nullの場合is not null
+-- 範囲はbetween and
+-- かつ、はand、またははor
