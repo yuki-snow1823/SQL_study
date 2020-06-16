@@ -11,5 +11,5 @@ select * from users; -- formのタイポ
 /*
 複数行コメント
 */
-select id,last_name from users;
+select id,last_name from users LIMIT 0, 1000;
 -- 必要なデータの取得
