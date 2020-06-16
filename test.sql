@@ -13,3 +13,6 @@ select * from users; -- formのタイポ
 */
 select id,last_name from users LIMIT 0, 1000;
 -- 必要なデータの取得
+
+select name as 名前 ,price as 価格 from products;
+
