@@ -44,3 +44,6 @@ select * from products where id = in(1,2,3); -- = もしくは、否定ならnot
 -- 例："中%" 中で始まる文字列
 --    "%中%" 中を含む文字列
 --    "__中" 二文字＋中で終わる文字列
+
+-- limit
+select * from products limit 0,10; -- (1から10までではなく、0から10こ)
