@@ -38,3 +38,9 @@ select * from products where id = in(1,2,3); -- = もしくは、否定ならnot
 -- nullの場合is not nullの場合is not null
 -- 範囲はbetween and
 -- かつ、はand、またははor
+
+-- ワイルドカード検索
+-- select * from users where last_name like "中%";
+-- 例："中%" 中で始まる文字列
+--    "%中%" 中を含む文字列
+--    "__中" 二文字＋中で終わる文字列
