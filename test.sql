@@ -47,3 +47,7 @@ select * from products where id = in(1,2,3); -- = もしくは、否定ならnot
 
 -- limit
 select * from products limit 0,10; -- (1から10までではなく、0から10こ)
+
+
+-- ★まとめ
+select id,last_name from users where gender = 1 limit 1000;
