@@ -120,3 +120,8 @@ group by
  request_month;  -- グルーピング
 having
  count(distinct user_id) >= 630;
+
+-- sort 高い順
+select *
+from products
+order by price desc;
