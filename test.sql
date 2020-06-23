@@ -79,3 +79,5 @@ select
   max(price)
 from
   products;
+
+-- DBにnullがあると、値がないけど平均に0として含まれてしまう
