@@ -81,3 +81,12 @@ from
   products;
 
 -- DBにnullがあると、値がないけど平均に0として含まれてしまう
+
+-- 数を数える
+
+select
+  count(*)
+from
+  users
+where
+ gender = 1;
