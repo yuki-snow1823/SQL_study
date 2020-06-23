@@ -51,3 +51,13 @@ select * from products limit 0,10; -- (1から10までではなく、0から10�
 
 -- ★まとめ
 select id,last_name from users where gender = 1 limit 1000;
+
+
+-- 合計値を求めるSQL
+select
+  sum(amount)
+from
+  orders
+where
+ order_time >= "2017-01-01 00:00:00"
+  and order_time < "2017-02-01 00:00:00";
