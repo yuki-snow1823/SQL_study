@@ -73,3 +73,9 @@ select
   min(price)
 from
   products;
+
+-- 最大値
+select
+  max(price)
+from
+  products;
