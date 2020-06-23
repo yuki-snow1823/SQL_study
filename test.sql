@@ -60,3 +60,10 @@ from
 where
  order_time >= "2017-01-01 00:00:00"
   and order_time < "2017-02-01 00:00:00";
+
+
+-- 平均値
+select
+  avg(price)
+from
+  products;
