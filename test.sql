@@ -100,3 +100,11 @@ from
 where
  request_month = "2017-01-01" ;
 
+ -- 指定のグループ化
+
+ select
+  prefecture_id, count(*)
+from
+  users
+group by
+ prefecture_id;
