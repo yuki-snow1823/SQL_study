@@ -118,3 +118,5 @@ where
  request_month >= "2017-01-01" and request_month < "2018-02-01" -- 期間
 group by
  request_month;  -- グルーピング
+having
+ count(distinct user_id) >= 630;
