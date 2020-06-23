@@ -124,4 +124,4 @@ having
 -- sort 高い順
 select *
 from products
-order by price desc;
+order by price desc,id asc;
