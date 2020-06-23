@@ -108,3 +108,13 @@ from
   users
 group by
  prefecture_id;
+
+-- 応用
+select
+  request_month, count(distinct user_id) -- 二つを出してください
+from
+  access_logs -- から
+where
+ request_month >= "2017-01-01" and request_month < "2018-02-01" -- 期間
+group by
+ request_month;  -- グルーピング
