@@ -67,3 +67,9 @@ select
   avg(price)
 from
   products;
+
+-- 最小値
+select
+  min(price)
+from
+  products;
