@@ -90,3 +90,13 @@ from
   users
 where
  gender = 1;
+
+
+-- ユニーク数の求め方
+select
+  count(distinct user_id)
+from
+  access_logs
+where
+ request_month = "2017-01-01" ;
+
