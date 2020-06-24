@@ -128,3 +128,5 @@ order by price desc,id asc;
 
 -- 
 10 + null -- nullとなる
+
+select abs(-10);
