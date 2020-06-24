@@ -134,3 +134,10 @@ select abs(-10);
 
 -- 四捨五入
 round(10.1111,2) -- 数字、桁数
+
+-- 文字列の結合
+select
+ concat
+(last_name, " ", first_name,"さん")
+from
+ users;
