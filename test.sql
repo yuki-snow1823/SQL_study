@@ -125,3 +125,6 @@ having
 select *
 from products
 order by price desc,id asc;
+
+-- 
+10 + null -- nullとなる
