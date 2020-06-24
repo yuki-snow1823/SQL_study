@@ -141,3 +141,18 @@ select
 (last_name, " ", first_name,"さん")
 from
  users;
+
+
+-- 日付
+
+select current_date
+();
+select current_timestamp
+();
+select current_date
+()+3;
+select current_time
+() + interval 6 hour;
+select *
+from orders
+where extract(year_month from order_time) = 201701;
