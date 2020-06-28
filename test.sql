@@ -145,14 +145,40 @@ from
 
 -- 日付
 
-select current_date
-();
-select current_timestamp
-();
-select current_date
-()+3;
-select current_time
-() + interval 6 hour;
+-- select current_date
+-- ();
+-- select current_timestamp
+-- ();
+-- select current_date
+-- ()+3;
+-- select current_time
+-- () + interval 6 hour;
 select *
 from orders
 where extract(year_month from order_time) = 201701;
+
+
+-- 内部結合
+
+select
+  users.id, -- 表示させるテーブルの何をか書く
+  users.last_name,
+  users.first_name,
+  -- prefecture_id 
+  prefectures.name
+from
+  users
+inner join
+  prefectures on users.prefecture_id = prefectures.id; -- キーの関係性を書く
+
+-- as
+select
+  u.id,
+  u.last_name,
+  u.first_name,
+  -- prefecture_id 
+  p.name
+from
+  users as u
+inner join
+ prefectures as p on u.prefecture_id = p.id;
